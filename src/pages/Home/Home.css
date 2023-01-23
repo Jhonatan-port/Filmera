@@ -1,0 +1,7 @@
+.container{
+    @apply text-center  mx-auto 
+}
+
+.container img{
+    @apply mx-auto
+}
