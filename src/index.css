@@ -5,5 +5,5 @@
     @apply box-border
 }
 body{
-    @apply bg-gray-100 text-black
+    @apply bg-gray-100 text-black dark:bg-gray-800 dark:text-white
 }
