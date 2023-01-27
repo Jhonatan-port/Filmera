@@ -8,7 +8,7 @@ import './app.css'
 function App() {
 
     return (
-        <div className='bg-primary text-primary'>
+        <div className=''>
             <ThemeProvider>
                 <Navbar />
                 <Outlet />

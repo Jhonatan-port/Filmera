@@ -9,7 +9,7 @@ function ScreenModes(){
     const { theme, setTheme } = useContext(ThemeContext)
 
 
-    return <button className='btn' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}><MdOutlineDarkMode/> {theme === 'light' ? 'dark' : 'light'} </button>
+    return <button className='btn' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>{theme === 'light' ? <MdOutlineDarkMode/>  : <MdOutlineLightMode/>} </button>
 }
 
 export default ScreenModes

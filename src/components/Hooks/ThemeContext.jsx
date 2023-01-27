@@ -23,9 +23,8 @@ export const ThemeProvider = ({ initialTheme, children}) => {
 
     const rawSetTheme = (rawTheme) => {
         const root = window.document.documentElement;
-        const isLight = rawTheme === 'light';
-
-        root.classList.remove(isLight ? 'light' : 'dark');
+        const themeToRemove = rawTheme === 'light' ? 'dark' : 'light'
+        root.classList.remove(themeToRemove);
         root.classList.add(rawTheme);
 
         localStorage.setItem('color-theme', rawTheme);

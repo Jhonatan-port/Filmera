@@ -4,14 +4,9 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,jsx,}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
-      backgroundColor: {
-        primary: 'var(--color-bg-primary)',
-      },
-      textColor: {
-        primary: 'var(--color-text-primary)',
-      },
     },
   },
   plugins: [],
