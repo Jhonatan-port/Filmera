@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { ThemeProvider } from './components/Hooks/ThemeContext'
 import Navbar from './components/Navbar'
