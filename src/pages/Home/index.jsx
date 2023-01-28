@@ -13,11 +13,13 @@ function Home() {
     const getTopRatedMovies = async (url) => {
         const res = await fetch(url)
         const data = await res.json()
-
-        setTopMovies(data.results)
+        setTimeout(() => {
+            setTopMovies(data.results)
+        }, 500)
     }
 
     useEffect(() => {
+
         const topRatedURL = `${moviesURL}top_rated?${apikey}`
         getTopRatedMovies(topRatedURL)
     }, [])
@@ -29,7 +31,7 @@ function Home() {
             </h2>
             <div>
                 {topMovies.length === 0 && <Loading />}
-                {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie}/> ) }
+                {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
             </div>
         </div>
     )

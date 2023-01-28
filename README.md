@@ -11,7 +11,7 @@
 - [x] Listagem dos melhores filmes ranqueados.
 - [x] Procura de filmes que o usuário desejar pesquisar naquele momento.
 - [x] Tela de visualização de detalhes referentes a um filme selecionado.
-- [ ] Opção de alternar entre Light e Dark Mode.
+- [x] Opção de alternar entre Light e Dark Mode.
 - [ ] Deploy da aplicação através do github Pages.
 
 ### Demonstração da Aplicação

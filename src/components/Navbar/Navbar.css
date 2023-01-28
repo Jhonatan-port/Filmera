@@ -7,10 +7,10 @@
 }
 
 .header form{
-    @apply bg-slate-200 rounded-md
+    @apply bg-slate-200 rounded-md 
 }
 .header form input{
-    @apply p-2 rounded-md
+    @apply p-2 rounded-md dark:text-black
 }
 
 .header form button{
